@@ -1,5 +1,20 @@
 # Z_Attack
 
+> **About this fork**: This is my fork of the team repository ([NovaPhi/Game](https://github.com/NovaPhi/Game)), kept for my portfolio. Z Attack is a web-based roguelite card game built by a team of 3 at Tec de Monterrey (Feb–May 2026): HTML/CSS/JS frontend, Node.js/Express REST API, and a MariaDB database, all run with Docker Compose.
+>
+> ### My contributions (Adolfo Hernández Sánchez)
+> - **Card collection & deck builder**: the frontend for browsing cards and building decks, plus a first version of the card-unlock system ([`cards.js`](Z_Attack/JS/cards.js), [`DeckBuilder.js`](Z_Attack/JS/DeckBuilder.js), [`cardsUnlock.js`](Z_Attack/JS/cardsUnlock.js)).
+> - **Admin analytics dashboard**: REST endpoints and Chart.js charts of player and run data, plus admin views of users and connection logs ([`Admin.js`](Z_Attack/Api/Admin.js), [`dataGraph.js`](Z_Attack/Api/dataGraph.js), [`AdminPage.html`](Z_Attack/HTML/AdminPage.html)).
+> - **Database:**
+>   - Normalized the schema to 3NF, from 9 to 13 tables, with the ER diagram and the justification document.
+>   - Added a connection-log table with an index for its queries.
+>   - Extended `saveStats` so it records every run.
+>   - Fixed seed data that referenced heroes and cards that didn't exist.
+> - **Game world:** map obstacles and barriers, and the integration of the backgrounds and sprites, including a style guide for AI-assisted asset generation.
+> - **Documentation:** the JS, API endpoint, admin page, and CSS docs.
+
+---
+
 A web-based card game with a Node.js backend and MariaDB database. Run the full stack locally with Docker no need to install Node.js or MariaDB.
 
 ---
