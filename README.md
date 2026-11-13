@@ -10,7 +10,7 @@
 >   - Added a connection-log table with an index for its queries.
 >   - Extended `saveStats` so it records every run.
 >   - Fixed seed data that referenced heroes and cards that didn't exist.
-> - **Game world:** map obstacles and barriers, and the integration of the backgrounds and sprites, including a style guide for AI-assisted asset generation.
+> - **Game world:** map obstacles and barriers, and the integration of the backgrounds and sprites.
 > - **Documentation:** the JS, API endpoint, admin page, and CSS docs.
 
 ---
